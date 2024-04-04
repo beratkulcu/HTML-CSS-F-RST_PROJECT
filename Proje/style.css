@@ -1,0 +1,124 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    background: url(../Proje/image/bjkresim.jpeg);  /* bck url istenilen klasöre gider */
+    height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.container .navbar{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+}
+
+
+.center-text {
+    text-align: center;
+    font-family: 'Anton' ,sans-serif;
+    font-size: 60px;
+    
+    position: absolute; /* Pozisyonu mutlak olarak ayarla */
+    top: 30px; /* En üste hizala */
+    left: 50%; /* Yatayda ortala */
+    transform: translateX(-50%); /* Yatayda ortala */ 
+}
+
+.navbar ul{
+    float: right; /* saga kaydırıyor */
+    margin-right: 30px;
+    padding-top: 30px; /* Yazıları biraz aşağı çekmek için padding-top ekledik */
+    padding-right: 10px; /* Yazıları biraz sola çekmek için padding-right ekledik */
+   
+}
+
+.navbar .logo{
+    display: inline-block;  /* block acılmazsa kaydırma yapar */
+    margin-left: 50px; /* soldan saga dogru bir kaydırma */
+    margin-top: 20px; /* asagı hizalama hareketlendirme */
+}
+
+.navbar ul li {
+    list-style: none; /* işaretlemeleri kaldırır */
+    display: inline-block; /* yan yana getiriyor */
+    border-radius: 10%;
+    margin: 6px;
+}
+
+.navbar ul li a {
+    color: black;
+    font-size: 20px;
+    font-family: "Anton";
+}
+
+.navbar ul li:hover {
+    background-color: goldenrod; /* Mouse üstüne gelindiğinde arka plan rengini değiştir */
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: goldenrod;
+}
+
+
+.container .center{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%); /* ortalama ve düzeltmeler */
+    background-color: black;
+    color: yellowgreen;
+    font-family: sans-serif;
+    user-select: none; /* kullanıcı kopya yapamasın */
+    border-radius: 25px;
+}
+
+.center h1{
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.center h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.center .butons{
+    margin: 35px ,280px;
+    text-align: center;
+}
+
+.center .butons button{
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    color: crimson;
+    background: black;
+    border: solid 1px red;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+.footer p {
+    margin: 0;
+}
+
+

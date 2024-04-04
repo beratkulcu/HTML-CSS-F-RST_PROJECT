@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombine Bilet Formu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="checkbox"] {
+            margin-bottom: 10px;
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin: 0 5px 0 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .accept {
+            margin-top: 10px;
+        }
+        button {
+            background-color: dodgerblue;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kombine Bilet Başvuru Formu</h2>
+        <form action="#" method="post">
+            <label for="ad">Ad:</label>
+            <input type="text" id="ad" name="ad" required>
+
+            <label for="soyad">Soyad:</label>
+            <input type="text" id="soyad" name="soyad" required>
+
+            <label for="tc">TC Kimlik Numarası:</label>
+            <input type="text" id="tc" name="tc" minlength="11" maxlength="11" required>
+
+            <label for="yas">Yaş:</label>
+            <input type="number" id="yas" name="yas" min="18" max="100" required>
+
+            <label>Cinsiyet:</label>
+            <input type="radio" id="erkek" name="cinsiyet" value="erkek" required>
+            <label for="erkek">Erkek</label>
+            <input type="radio" id="kadin" name="cinsiyet" value="kadin" required>
+            <label for="kadin">Kadın</label>
+
+            <input type="checkbox" id="kabul" name="kabul" required>
+            <label for="kabul" class="accept">Kuralları ve Şartları Kabul Ediyorum</label>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+</body>
+</html>
